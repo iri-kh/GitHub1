@@ -1,0 +1,12 @@
+let tlacitkoSubmit = document.querySelectorAll("[name=jmeno-submit]")[0]; //vyselektujeme tlacitko s pomoci atributu name
+console.log(tlacitkoSubmit); 
+
+tlacitkoSubmit.addEventListener("click", (e) => {
+    e.preventDefault(); //zamezim vychozemu chovani udalosti
+
+    
+    let inputJmenoUzivatele = document.querySelectorAll("#jmenoUzivatele")[0]; //vyselektujeme input vlozeny uzivatelem
+    console.log(inputJmenoUzivatele.value);
+
+    alert("Ahoj" + " " + inputJmenoUzivatele.value);
+});
